@@ -3,18 +3,18 @@ import { motion } from "framer-motion"
 import { MotionInViewLetter } from './MotionInViewLetter'
 import { MotionViewImage } from './MotionViewImage'
 // import TextI from '../assets/text/i.png'
-import TextAm from '../assets/text/am.png'
-import TextWeb from '../assets/text/web.png'
-import TextDeveloper from '../assets/text/developer.png'
-import TextDevelopment from '../assets/text/development.png'
-import TextFor from '../assets/text/for.png'
-import TextMe from '../assets/text/me.png'
-import TextNo from '../assets/text/no.png'
-import TextOnly from '../assets/text/only.png'
-import TextWork from '../assets/text/work.png'
-import TextBut from '../assets/text/but.png'
-import TextAnd from '../assets/text/and.png'
-import TextHobby from '../assets/text/hobby.png'
+// import TextAm from '../assets/text/am.png'
+// import TextWeb from '../assets/text/web.png'
+// import TextDeveloper from '../assets/text/developer.png'
+// import TextDevelopment from '../assets/text/development.png'
+// import TextFor from '../assets/text/for.png'
+// import TextMe from '../assets/text/me.png'
+// import TextNo from '../assets/text/no.png'
+// import TextOnly from '../assets/text/only.png'
+// import TextWork from '../assets/text/work.png'
+// import TextBut from '../assets/text/but.png'
+// import TextAnd from '../assets/text/and.png'
+// import TextHobby from '../assets/text/hobby.png'
 import '../styles/AboutSection.scss'
 
 type Props = {}
@@ -24,7 +24,7 @@ export const AboutSection = (props: Props) => {
     <section id='section-about' className='about'>
       <div className='crooked-text'>
         {/* <MotionViewImage src={TextI} cn='crooked-i' delay={0.1} /> */}
-        <MotionViewImage src={TextAm} cn='crooked-am' delay={0.2} />
+        {/* <MotionViewImage src={TextAm} cn='crooked-am' delay={0.2} />
         <MotionViewImage src={TextWeb} cn='crooked-web' delay={0.3} />
         <MotionViewImage src={TextDeveloper} cn='crooked-developer' delay={0.4} />
         <MotionViewImage src={TextDevelopment} cn='crooked-development' delay={0.1} />
@@ -35,7 +35,7 @@ export const AboutSection = (props: Props) => {
         <MotionViewImage src={TextWork} cn='crooked-work' delay={0.1} />
         <MotionViewImage src={TextBut} cn='crooked-but' delay={0.1} />
         <MotionViewImage src={TextAnd} cn='crooked-and' delay={0.1} />
-        <MotionViewImage src={TextHobby} cn='crooked-hobby' delay={0.1} />
+        <MotionViewImage src={TextHobby} cn='crooked-hobby' delay={0.1} /> */}
       </div>
       <div
         className={`about__text text-1`}>
