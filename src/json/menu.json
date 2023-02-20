@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Обо мне",
+    "link": "#section-about"
+  },
+  {
+    "title": "Проекты",
+    "link": "#section-project"
+  },
+  {
+    "title": "Контакты",
+    "link": "#section-contacts"
+  }
+]

@@ -1,0 +1,206 @@
+.contacts {
+  position: relative;
+  background: #000;
+  padding: 3rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  overflow: hidden;
+  user-select: none;
+
+  .crooked-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 710px;
+    margin: 0 auto;
+    z-index: 1;
+    user-select: none;
+
+    img {
+      position: absolute;
+      z-index: 1;
+      user-select: none;
+    }
+
+    .crooked-a {
+      width: 58px;
+      height: auto;
+      top: 10px;
+      left: 55px;
+    }
+
+    .crooked-to {
+      width: 190px;
+      height: auto;
+      top: 0px;
+      left: 110px;
+    }
+
+    .crooked-no {
+      width: 80px;
+      height: auto;
+      top: 90px;
+      left: 285px;
+    }
+
+    .crooked-lose {
+      width: 205px;
+      height: auto;
+      top: 170px;
+      left: 300px;
+    }
+
+    .crooked-me {
+      width: 170px;
+      height: auto;
+      top: 365px;
+      left: 500px;
+    }
+  }
+
+  .github-link {
+    width: 380px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    z-index: 3;
+
+    .contact-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .contact-link {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .link-block {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+
+        input {
+          padding: 2px;
+          font-size: 1.5rem;
+          background-color: transparent;
+          color: white;
+          display: inline;
+          cursor: default;
+          user-select: none;
+          max-width: 250px;
+
+          &:focus {
+            outline: none;
+            user-select: none;
+          }
+        }
+
+        img {
+          width: 28px;
+          height: 28px;
+          cursor: pointer;
+          border-radius: 100%;
+
+
+        }
+
+        .copy-block {
+          position: relative;
+
+          .icon-buffer {
+            transition: all 0.2s ease;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.315);
+
+            }
+          }
+
+          .coppied-notice {
+            color: #fff;
+            font-size: 0.7rem;
+            opacity: 0;
+            transition: all 0.4s ease;
+            font-size: 0.6rem;
+            position: absolute;
+            bottom: -16px;
+            left: -10px;
+          }
+
+          .show-notice {
+            opacity: 1;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1280px) {
+        .link-block {
+          input {
+            font-size: 1rem;
+            max-width: 180px;
+
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts {
+    gap: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 1rem;
+    gap: 3rem;
+
+    .spherical-block {
+      width: 320px;
+      height: 320px;
+
+    }
+
+    .crooked-contact {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .contacts {
+    padding: 2rem;
+    gap: 3rem;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .github-link {
+      width: 320px;
+      height: 320px;
+
+    }
+
+  }
+}

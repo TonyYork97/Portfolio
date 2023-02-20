@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+@font-face {
+  font-family: NeutralFace;
+  src: url("../../public/fonts/NeutralFace.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeutralFaceBold;
+  src: url("../../public/fonts/NeutralFace-Bold.otf") format("opentype");
+}
+
+:root {
+
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+body {
+
+  font-family: 'NeutralFace', 'Cairo', 'NeutralFaceBold', sans-serif;
+
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+input {
+  color: black;
+}
+
+
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea,
+span {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+h6 {
+  display: inline-block;
+}
+
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+body {
+  background: url('../assets/background7.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}

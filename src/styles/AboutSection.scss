@@ -1,0 +1,327 @@
+$imgI: 225px;
+$imgAm: 268px;
+$imgWeb: 371px;
+$imgDeveloper: 505px;
+$imgDevelopment: 785px;
+$imgFor: 870px;
+$imgMe: 702px;
+$imgNo: 605px;
+$imgOnly: 390px;
+$imgWork: 310px;
+$imgBut: 345px;
+$imgAnd: 440px;
+$imgHobby: 485px;
+
+.about {
+  padding: 1rem 5rem;
+  position: relative;
+  overflow: hidden;
+
+  .crooked-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // width: 75vw;
+    margin: 0 auto;
+    z-index: -1;
+
+    img {
+      position: absolute;
+      z-index: 1;
+      user-select: none;
+    }
+
+    .crooked-i {
+      width: 45px;
+      height: auto;
+      left: 225px;
+      top: -5px;
+    }
+
+    .crooked-am {
+      width: 97px;
+      height: auto;
+      left: 268px;
+      top: -13px;
+    }
+
+    .crooked-web {
+      width: 110px;
+      height: auto;
+      top: -4px;
+      left: 371px;
+    }
+
+    .crooked-developer {
+      width: 265px;
+      height: auto;
+      top: 10px;
+      left: 505px;
+    }
+
+    .crooked-development {
+      width: 190px;
+      height: auto;
+      top: 110px;
+      left: 785px;
+    }
+
+    .crooked-for {
+      width: 95px;
+      height: auto;
+      top: 410px;
+      left: 870px;
+      // 645
+    }
+
+    .crooked-me {
+      width: 155px;
+      height: auto;
+      bottom: 495px;
+      left: 702px;
+    }
+
+    .crooked-no {
+      width: 75px;
+      height: auto;
+      left: 605px;
+      bottom: 505px;
+    }
+
+    .crooked-only {
+      width: 200px;
+      height: auto;
+      left: 390px;
+      bottom: 385px;
+    }
+
+    .crooked-work {
+      width: 100px;
+      height: auto;
+      left: 310px;
+      bottom: 180px;
+    }
+
+    .crooked-but {
+      width: 104px;
+      height: auto;
+      left: 345px;
+      bottom: 95px
+    }
+
+    .crooked-and {
+      width: 55px;
+      height: auto;
+      left: 440px;
+      bottom: 70px;
+    }
+
+    .crooked-hobby {
+      width: 195px;
+      height: auto;
+      left: 485px;
+      bottom: 6px;
+    }
+  }
+
+  &__text {
+    padding: 5rem 0;
+    font-size: 2rem;
+
+    p {
+      width: 545px;
+
+    }
+
+  }
+
+  .white-span {
+    font-family: 'NeutralFaceBold';
+    // padding: 0 5rem;
+    position: relative;
+    height: 4rem;
+
+
+    div {
+      // padding-left: 12rem;
+      position: absolute;
+      top: 5px;
+      left: 620px;
+      z-index: 10;
+    }
+
+    span {
+      font-size: 2.5rem;
+      color: #bbbbbb;
+
+    }
+  }
+
+  .text-1 {
+    padding-top: 18.5rem;
+  }
+
+  .text-2 {
+    display: flex;
+    justify-content: end;
+
+    p {
+      width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .text-2 {
+      p {
+        width: 502px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1248px) {
+  .about {
+    .white-span {
+      div {
+        left: calc(620px - 228px);
+      }
+    }
+
+    .crooked-text {
+      .crooked-i {
+        left: calc($imgI - 228px);
+      }
+
+      .crooked-am {
+        left: calc($imgAm - 228px);
+      }
+
+      .crooked-web {
+        left: calc($imgWeb - 228px);
+      }
+
+      .crooked-developer {
+        left: calc($imgDeveloper - 228px);
+      }
+
+      .crooked-development {
+        left: calc($imgDevelopment - 228px);
+      }
+
+      .crooked-for {
+        left: calc($imgFor - 228px);
+      }
+
+      .crooked-me {
+        left: calc($imgMe - 228px);
+      }
+
+      .crooked-no {
+        left: calc($imgNo - 228px);
+      }
+
+      .crooked-only {
+        left: calc($imgOnly - 228px);
+      }
+
+      .crooked-work {
+        left: calc($imgWork - 228px);
+      }
+
+      .crooked-but {
+        left: calc($imgBut - 228px);
+      }
+
+      .crooked-and {
+        left: calc($imgAnd - 228px);
+      }
+
+      .crooked-hobby {
+        left: calc($imgHobby - 228px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 1rem 3rem;
+
+    &__text {
+      font-size: 1.5rem;
+      padding: 6.7rem 0;
+
+      p {
+        width: 500px;
+      }
+    }
+
+    .white-span {
+      div {
+        left: calc(640px - 233px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    .crooked-text {
+      display: none;
+    }
+
+    .white-span {
+      display: flex;
+      justify-content: end;
+      height: auto;
+
+      div {
+        position: static;
+
+        span {
+
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &__text {
+      padding: 1rem 0;
+    }
+
+    .text-1 {
+      padding-top: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about {
+    padding: 1rem 2rem;
+
+    .white-span {
+      padding-top: 1rem;
+
+      div {
+        position: static;
+
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__text {
+      padding: 0;
+
+      p {
+        font-size: 1rem;
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}
