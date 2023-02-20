@@ -1,30 +1,41 @@
 import * as THREE from 'three'
-import { useRef, useState, useMemo, useEffect } from 'react'
+import React, { useRef, useState, useMemo, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, TrackballControls } from '@react-three/drei'
-import randomWord from 'random-words'
+import { Euler, Vector3, Color } from 'three'
+import { Mesh } from 'three'
+type WordProps = {
+  children: any;
+  position: any
 
-function Word({ children, ...props }) {
+}
+
+function Word({ children, ...props }: WordProps) {
   const color = new THREE.Color()
   const fontProps = { font: '/Inter-Bold.woff', fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
-  const ref = useRef()
+  const ref = useRef<Mesh>(null!)
   const [hovered, setHovered] = useState(false)
-  const over = (e) => (e.stopPropagation(), setHovered(true))
+  const over = (e: { stopPropagation: () => any }) => (e.stopPropagation(), setHovered(true))
   const out = () => setHovered(false)
   // Change the mouse cursor on hover
   useEffect(() => {
     if (hovered) document.body.style.cursor = 'pointer'
-    return () => (document.body.style.cursor = 'auto')
+    return () => {
+      document.body.style.cursor = 'auto'
+    }
   }, [hovered])
   // Tie component to the render-loop
   useFrame(({ camera }) => {
+
     // Make text face the camera
     ref.current.quaternion.copy(camera.quaternion)
     // Animate font color
-    ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
+    // ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
   })
-  return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps} children={children} />
+  return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps}>{children}</Text>
 }
+
+
 const w = ['', 'React', 'Redux', 'Git', 'MobX', 'Github', 'NPM', 'CSS', 'HTML', 'TS', 'JS', 'Socket', 'API', 'Frontend', 'Developer', 'UI', 'Node', 'JSON', 'Tailwind', 'Mobile', 'JSX', 'SCSS', 'Object', 'Array', 'Function', 'Web', 'HTTP', 'Request', 'AJAX', 'Axios', 'Backend', 'ES5/ES6', 'Mongo DB', 'Response', 'Promise', 'Async', 'Await', 'React', 'Redux', 'Git', 'MobX', 'Github', 'NPM', 'CSS', 'HTML', 'TS', 'JS', 'Socket', 'API', 'Frontend', 'Developer', 'UI', 'Node', 'JSON', 'Tailwind', 'Mobile', 'JSX', 'SCSS', 'Object', 'Array', 'Function', 'Web', 'HTTP', 'Request', 'AJAX', 'Axios', 'Backend', 'ES5/ES6', 'Mongo DB', 'Response', 'Promise', 'Async', 'Await']
 function Cloud({ count = 4, radius = 20 }) {
   // Create a count x count random words with spherical distribution
@@ -39,7 +50,11 @@ function Cloud({ count = 4, radius = 20 }) {
       }
     return temp
   }, [count, radius])
-  return words.map(([pos, word], index) => <Word key={index} position={pos} children={word} />)
+  return (
+    <>
+      {words.map(([pos, word], index) => <Word key={index} position={pos} children={word} />)}
+    </>
+  )
 }
 
 export default function SphericalBlock() {
