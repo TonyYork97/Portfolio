@@ -20,13 +20,13 @@ export const ContactSection = () => {
     <section id='section-contacts' className="contacts">
       <div className='crooked-contact'>
         <MotionViewImage src={ContactA} cn='crooked-a' delay={0.1} />
-        <MotionViewImage src={ContactTo} cn='crooked-to' delay={0.2} />
-        <MotionViewImage src={ContactNo} cn='crooked-no' delay={0.3} />
-        <MotionViewImage src={ContactLose} cn='crooked-lose' delay={0.4} />
-        <MotionViewImage src={ContactMe} cn='crooked-me' delay={0.5} />
+        <MotionViewImage src={ContactTo} cn='crooked-to' delay={0.1} />
+        <MotionViewImage src={ContactNo} cn='crooked-no' delay={0.1} />
+        <MotionViewImage src={ContactLose} cn='crooked-lose' delay={0.1} />
+        <MotionViewImage src={ContactMe} cn='crooked-me' delay={0.1} />
       </div>
       <div className='spherical-block'>
-        {/* <SphericalBlock /> */}
+        <SphericalBlock />
       </div>
       <div className='contact-list'>
         <div className='contact-icons'>
