@@ -26,7 +26,7 @@ export const ContactSection = () => {
         <MotionViewImage src={ContactMe} cn='crooked-me' delay={0.5} />
       </div>
       <div className='spherical-block'>
-        <SphericalBlock />
+        {/* <SphericalBlock /> */}
       </div>
       <div className='contact-list'>
         <div className='contact-icons'>
