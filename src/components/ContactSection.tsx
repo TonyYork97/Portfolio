@@ -14,9 +14,7 @@ import SphericalBlock from './SphericalBlock'
 import { ContactLink } from './ContactLink'
 import '../styles/ContactSection.scss'
 
-type Props = {}
-
-export const ContactSection = (props: Props) => {
+export const ContactSection = () => {
 
   return (
     <section id='section-contacts' className="contacts">
