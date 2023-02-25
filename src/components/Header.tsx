@@ -22,7 +22,7 @@ export const Header = () => {
             initial={'hidden'}
             animate='visible'
             transition={{ delay: 0.4, type: 'just' }}
-            className="header-menu__items">
+            className="header__menu__items">
             <a href={el.link}>{el.title}</a>
           </motion.div>
         ))}

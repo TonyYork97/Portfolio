@@ -30,6 +30,7 @@ export const ProjectSection = (props: Props) => {
             viewport={{ once: true }}
             className="project-title">
             <h3>Web money</h3>
+            <p>Сайт позволяющий анализировать свои доходы и расходы. Добавляя операции вы можете отслеживать куда и сколько было потрачено средств.  </p>
           </motion.div>
           <motion.div
             initial={{ y: 50, x: 50, opacity: 0 }}
@@ -51,6 +52,7 @@ export const ProjectSection = (props: Props) => {
             viewport={{ once: true }}
             className="project-title">
             <h3>Jenny Cosmetic</h3>
+            <p>Онлайн магазин косметики</p>
           </motion.div>
           <motion.div
             initial={{ y: 50, x: -50, opacity: 0 }}

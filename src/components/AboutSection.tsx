@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import { MotionInViewLetter } from './MotionInViewLetter'
 import { MotionViewImage } from './MotionViewImage'
-// import TextI from '../assets/text/i.png'
+import TextI from '../assets/i.png'
 import TextAm from '../assets/am.png'
 import TextWeb from '../assets/web.png'
 import TextDeveloper from '../assets/developer.png'
@@ -23,11 +23,11 @@ export const AboutSection = (props: Props) => {
   return (
     <section id='section-about' className='about'>
       <div className='crooked-text'>
-        {/* <MotionViewImage src={TextI} cn='crooked-i' delay={0.1} /> */}
-        <MotionViewImage src={TextAm} cn='crooked-am' delay={0.2} />
-        <MotionViewImage src={TextWeb} cn='crooked-web' delay={0.3} />
-        <MotionViewImage src={TextDeveloper} cn='crooked-developer' delay={0.4} />
-        <MotionViewImage src={TextDevelopment} cn='crooked-development' delay={0.1} />
+        <MotionViewImage src={TextI} cn='crooked-i' delay={0.05} />
+        <MotionViewImage src={TextAm} cn='crooked-am' delay={0.1} />
+        <MotionViewImage src={TextWeb} cn='crooked-web' delay={0.150} />
+        <MotionViewImage src={TextDeveloper} cn='crooked-developer' delay={0.2} />
+        <MotionViewImage src={TextDevelopment} cn='crooked-development' delay={0.250} />
         <MotionViewImage src={TextFor} cn='crooked-for' delay={0.1} />
         <MotionViewImage src={TextMe} cn='crooked-me' delay={0.1} />
         <MotionViewImage src={TextNo} cn='crooked-no' delay={0.1} />

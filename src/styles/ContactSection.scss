@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
   background: #000;
-  padding: 3rem 1rem 0rem;
+  padding: 4rem 1rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +63,8 @@
   }
 
   .spherical-block {
+    position: relative;
+    z-index: 14;
     width: 380px;
     height: 380px;
     overflow: hidden;

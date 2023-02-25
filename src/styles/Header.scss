@@ -9,8 +9,41 @@
     align-items: center;
     gap: 2rem;
 
-    img {
-      width: 24px;
+    &__items {
+      >a {
+        position: relative;
+        display: block;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 4px;
+          left: 0;
+          bottom: -5px;
+          background: #000;
+          transition: all 0.2s ease;
+        }
+
+        &:hover::before {
+          width: 50%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 4px;
+          right: 0;
+          bottom: -5px;
+          background: #000;
+          transition: all 0.2s 0.2s ease;
+        }
+
+        &:hover::after {
+          width: 50%;
+        }
+      }
     }
   }
 }
