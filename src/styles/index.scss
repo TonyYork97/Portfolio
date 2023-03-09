@@ -12,9 +12,6 @@
 
 body {
   // background: url('../assets/background7.jpg');
-  // background-size: cover;
-  // background-repeat: repeat;
-  // background-attachment: fixed;
   background: rgb(187, 208, 196);
   background: linear-gradient(
     90deg,
@@ -23,6 +20,8 @@ body {
     rgba(62, 77, 96, 1) 61%,
     rgba(49, 55, 81, 1) 82%
   );
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 :root {
