@@ -2,19 +2,32 @@
 
 @font-face {
   font-family: NeutralFace;
-  src: url("../../public/fonts/NeutralFace.otf") format("opentype");
+  src: url('../../public/fonts/NeutralFace.otf') format('opentype');
 }
 
 @font-face {
   font-family: NeutralFaceBold;
-  src: url("../../public/fonts/NeutralFace-Bold.otf") format("opentype");
+  src: url('../../public/fonts/NeutralFace-Bold.otf') format('opentype');
+}
+
+body {
+  // background: url('../assets/background7.jpg');
+  // background-size: cover;
+  // background-repeat: repeat;
+  // background-attachment: fixed;
+  background: rgb(187, 208, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(187, 208, 196, 1) 0%,
+    rgba(89, 111, 124, 1) 32%,
+    rgba(62, 77, 96, 1) 61%,
+    rgba(49, 55, 81, 1) 82%
+  );
 }
 
 :root {
-
   line-height: 1.5;
   font-weight: 400;
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,12 +40,8 @@ a {
   text-decoration: none;
 }
 
-
-
 body {
-
   font-family: 'NeutralFace', 'Cairo', 'NeutralFaceBold', sans-serif;
-
 
   min-width: 320px;
   min-height: 100vh;
@@ -49,8 +58,6 @@ body {
 input {
   color: black;
 }
-
-
 
 *,
 *:before,
@@ -145,11 +152,4 @@ h6 {
 a {
   font-size: 16px;
   text-decoration: none;
-}
-
-body {
-  background: url('../assets/background7.jpg');
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
