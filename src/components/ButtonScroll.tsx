@@ -25,7 +25,8 @@ export const ButtonScroll = (props: Props) => {
         initial={{ y: 0 }}
         animate={{ y: [0, -2, 2, -1, 1, 0] }}
         transition={{ duration: 1, delay: 0.2, repeat: Infinity, repeatDelay: 7 }}
-        src={ArrowUp} alt="scroll up" />
+        src={ArrowUp} alt="scroll up"
+      />
     </button>
   )
 }

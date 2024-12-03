@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
 
-
 .fb {
   font-family: 'NeutralFaceBold';
 }
@@ -19,20 +18,19 @@
 }
 
 .btn-scrollup {
-  width: 54px;
-  height: 54px;
+  width: 32px;
+  height: 32px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 100%;
   position: fixed;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  bottom: 0.7rem;
+  left: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: all 1s ease;
   z-index: 99;
-
 
   img {
     width: 50%;
@@ -54,11 +52,7 @@
   &:hover {
     background-color: rgba(255, 255, 255, 0.7);
   }
-
 }
-
-
-
 
 .home {
   position: relative;
