@@ -9,14 +9,22 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const loader = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
+    const handleLoad = () => {
+      const loaderTimeout = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+
+      return () => {
+        clearTimeout(loaderTimeout);
+      };
+    };
+
+    window.addEventListener('load', handleLoad);
 
     return () => {
-      clearTimeout(loader)
-    }
-  }, [])
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
 
   if (isLoading) {
     return <Loader />
@@ -26,7 +34,6 @@ function App() {
       <Header />
       <Home />
       <ButtonScroll />
-
     </div>
   )
 }

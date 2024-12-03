@@ -8,34 +8,21 @@ import '../styles/HeaderSection.scss'
 type Props = {}
 
 export const HeaderSection = (props: Props) => {
+  const createAnimatedText = (text: string, delayStart = 0) =>
+    [...text].map((char, index) => (
+      <MotionLetter key={index} delay={delayStart + index * 0.1}>
+        {char === ' ' ? '\u00A0' : char} {/* Неразрывный пробел */}
+      </MotionLetter>
+    ));
+
   return (
     <section className='header-section'>
 
       <div className='title'>
-        <div className="title__first-line">
-          <MotionLetter delay={0.1}>H</MotionLetter>
-          <MotionLetter delay={0.2}>e</MotionLetter>
-          <MotionLetter delay={0.3}>l</MotionLetter>
-          <MotionLetter delay={0.4}>l</MotionLetter>
-          <MotionLetter delay={0.5}>o</MotionLetter>
-          <MotionLetter delay={0.6}>,</MotionLetter>
-        </div>
-        <div className='title__first-line'>
-          <MotionLetter delay={0.1}>M</MotionLetter>
-          <MotionLetter delay={0.2}>Y&nbsp;</MotionLetter>
-          <MotionLetter delay={0.3}>N</MotionLetter>
-          <MotionLetter delay={0.4}>A</MotionLetter>
-          <MotionLetter delay={0.5}>M</MotionLetter>
-          <MotionLetter delay={0.6}>E&nbsp;</MotionLetter>
-          <MotionLetter delay={0.7}>I</MotionLetter>
-          <MotionLetter delay={0.8}>S</MotionLetter>
-        </div>
-        <div className='title__first-line'>
-          <MotionLetter delay={0.1}>A</MotionLetter>
-          <MotionLetter delay={0.2}>N</MotionLetter>
-          <MotionLetter delay={0.3}>T</MotionLetter>
-          <MotionLetter delay={0.4}>O</MotionLetter>
-          <MotionLetter delay={0.5}>N</MotionLetter>
+        <div className="title">
+          <div className="title__first-line">{createAnimatedText('Hello,')}</div>
+          <div className="title__first-line">{createAnimatedText('MY NAME IS')}</div>
+          <div className="title__first-line">{createAnimatedText('ANTON')}</div>
         </div>
       </div>
 
