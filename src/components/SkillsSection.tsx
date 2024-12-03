@@ -23,7 +23,7 @@ export const SkillsSection = (props: Props) => {
             <div className='progress'>
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: '90%', }}
+                whileInView={{ width: '96%', }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="progress-level level-1"></motion.div>
@@ -41,7 +41,7 @@ export const SkillsSection = (props: Props) => {
             <div className='progress'>
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: '86%', }}
+                whileInView={{ width: '95%', }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="progress-level level-2"></motion.div>
@@ -51,14 +51,14 @@ export const SkillsSection = (props: Props) => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-              className='progress-title'>JAVASCRIPT</motion.div>
+              className='progress-title'>TS, JS</motion.div>
           </div>
 
           <div className="progress-block">
             <div className='progress'>
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: '91%', }}
+                whileInView={{ width: '97%', }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="progress-level level-3"></motion.div>
@@ -74,7 +74,7 @@ export const SkillsSection = (props: Props) => {
             <div className='progress'>
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: '71%', }}
+                whileInView={{ width: '90%', }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="progress-level level-4"></motion.div>
@@ -90,7 +90,7 @@ export const SkillsSection = (props: Props) => {
             <div className='progress'>
               <motion.div
                 initial={{ width: 0 }}
-                whileInView={{ width: '73%', }}
+                whileInView={{ width: '95%', }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="progress-level level-5"></motion.div>
@@ -118,12 +118,12 @@ export const SkillsSection = (props: Props) => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className='all-skils-block__title'>SCSS, TAILWIND, MATERIAL UI</motion.div>
+            className='all-skils-block__title'>SCSS, TAILWIND, MUI, ANTD</motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }} className='all-skils-block__title'>TYPESCRIPT, REDUX TOOLKIT, MOBX</motion.div>
+            viewport={{ once: true }} className='all-skils-block__title'>RTK, TANSTACK</motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}

@@ -44,7 +44,7 @@ export const AboutSection = (props: Props) => {
           whileInView={{ y: -60, opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}>
-          Мне 25 лет, я из Самары. Уже на протяжении двух лет я изучаю Веб разработку
+          Мне 27 лет. Опыт более 4-х лет. Коммерческий опыт более 2-х лет
         </motion.p>
       </div>
       <div
